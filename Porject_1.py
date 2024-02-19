@@ -140,7 +140,7 @@ def get_comment_info(video_ids):
                         
                         for item in response5["items"]:
                                 comment_information = dict(
-                         sr               Comment_Id = item["snippet"]["topLevelComment"]["id"],
+                                        Comment_Id = item["snippet"]["topLevelComment"]["id"],
                                         Video_Id = item["snippet"]["videoId"],
                                         Comment_Text = item["snippet"]["topLevelComment"]["snippet"]["textOriginal"],
                                         Comment_Author = item["snippet"]["topLevelComment"]["snippet"]["authorDisplayName"],
