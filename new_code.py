@@ -167,8 +167,8 @@ def channel_details(channel_id):
     ch_details=get_channel_info(channel_id)
     pl_details=get_playlist_info(channel_id)
     vi_ids=get_video_ids(channel_id)
-    vi_details=get_video_information(channel_id)
-    com_details=get_comment_info(channel_id)
+    vi_details=get_video_information(vi_id)
+    com_details=get_comment_info(vi_id)
     
     coll=db["channel_details"]
     coll.insert_one({"channel_information":ch_details,"playlist_information":pl_details, "video_ids": vi_ids,
